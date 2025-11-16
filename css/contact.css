@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;/* to remove the default spacing from everything */
+}
+
+body {
+  font-family: Arial, sans-serif;/* the main fonts */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+  padding: 40px 30px; 
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; /* to center the whole header content */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header-logo {
+  height: 60px; 
+  margin-right: 30px;/*the space between the logo and text*/
+}
+
+/* desktop navigation */
+.desktop-nav .nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.desktop-nav .nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+/* mobile navigation icon(will be hidden on desktop)*/
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav img {
+  width: 40px;
+  height: 50px;
+}
+/* the dropdown menu on mobile */
+.mobile-menu {
+  display: none;/* it will only show when the user clicks */
+  background-color: black;
+  position: absolute;
+  top: 100%;/* so it appears right under the header */
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu ul li {
+  list-style: none;
+  padding: 20px 0;
+  margin: 15px 0;
+}
+
+.mobile-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* header on small screens */
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none; /*hide the desktop menu */
+  }
+  .mobile-nav {
+    display: block;/*show the mobile menu */
+  }
+}
+
+
+/*footer*/
+.footer {
+  margin-top:0;
+  background-color: black;
+  color: white;
+  padding: 40px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* responsive grid */
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 30px; 
+}
+
+.footer-left .logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  height: 60px; 
+  margin-right: 20px;
+}
+
+.footer-left p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer-column {
+  flex: 1 1 200px; /* each column can shrink/grow */
+  align-items: center;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-column p,
+.footer-column ul {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+} 
+
+/*social media icon in the footer */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.instagram-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+ 
+/*bottom small text */
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  color: #999;
+  font-size: 14px;
+}
+/* footer on small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /*stack columns vertically */
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-left .logo {
+    justify-content: center;
+  }
+
+  .footer-left p {
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+}

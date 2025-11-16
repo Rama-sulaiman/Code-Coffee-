@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/store.css" />
+    <title>Central_Store</title>
+  </head>
+  <body>
+    <!--Header of the website. It contains of the logo+ desktop nav+ mobile nav-->
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo area on the left:central logo + the name -->
+        <div class="logo">
+          <img
+            src="images/central-logo.png"
+            alt="Central Cafe Logo"
+            class="header-logo"
+          />
+          <h4>Central Cafe</h4>
+        </div>
+        <!-- The normal navigation bar for big screens(laptop)-->
+        <nav class="desktop-nav">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!--The meny icon for mobile screens -->
+        <div class="mobile-nav">
+          <img src="images/menu.png" alt="menu" />
+        </div>
+        <!-- The navigation links when you click the icon on mobile-->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="store-page">
+      <!--Frist section of the store page(title + a short description)-->
+      <section class="store-hero">
+        <h1>Our Store</h1>
+        <p>Premium coffee equipment and accessories</p>
+        <!--  A little note to the customers-->
+        <span class="store-badge">Available for in-store purchase only</span>
+      </section>
+      <!-- section for showing the products-->
+      <section class="products-section">
+        <div class="products-grid">
+          <!--Product Card: image + info + price -->
+          <!-- Everything inside here repeats for every product-->
+          <div class="product-card">
+            <img src="images/coffee-beans.png" alt="Premium Coffee Beans" />
+            <div class="product-info">
+              <span class="category">Coffee</span>
+              <h3>Premium Coffee Beans<span>(250g)</span></h3>
+              <p>Freshly roasted arabica beans</p>
+            </div>
+            <div class="price">25,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img src="images/ceramic mug.jpeg" alt="Central Cafe Ceramic Mug" />
+            <div class="product-info">
+              <span class="category">Drinkware</span>
+              <h3>Central Cafe Ceramic Mug<span>(350ml)</span></h3>
+              <p>Premium ceramic with our logo</p>
+            </div>
+            <div class="price">15,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img src="images/Travel Tumbler(500ml).webp" alt="Travel Tumbler" />
+            <div class="product-info">
+              <span class="category">Drinkware</span>
+              <h3>Travel Tumbler<span>(500ml)</span></h3>
+              <p>Insulated stainless steel</p>
+            </div>
+            <div class="price">22,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img
+              src="images/Glass Coffee Cups Set(4 pieces).png"
+              alt="Glass Coffee Cups Set"
+            />
+            <div class="product-info">
+              <span class="category">Drinkware</span>
+              <h3>Glass Coffee Cups Set<span>(4 pieces)</span></h3>
+              <p>Double-wall insulated glass</p>
+            </div>
+            <div class="price">28,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img src="images/pour-over.jpg" alt="Pour Over Coffee Set" />
+            <div class="product-info">
+              <span class="category">Equipment</span>
+              <h3>Pour Over Coffee Set</h3>
+              <p>Complete brewing kit with dripper and server</p>
+            </div>
+            <div class="price">55,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img src="images/French Press.jpg" alt="French Press" />
+            <div class="product-info">
+              <span class="category">Equipment</span>
+              <h3>French Press <span>(1L)</span></h3>
+              <p>Classic coffee maker</p>
+            </div>
+            <div class="price">35,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img src="images/manual-grinder.avif" alt="Manual Burr Grinder" />
+            <div class="product-info">
+              <span class="category">Equipment</span>
+              <h3>Manual Burr Grinder</h3>
+              <p>Adjustable ceramic burr grinder</p>
+            </div>
+            <div class="price">65,000 IQD</div>
+          </div>
+          <!--Product card-->
+          <div class="product-card">
+            <img src="images/gift-box.jpg" alt="Coffee Lover Gift Box" />
+            <div class="product-info">
+              <span class="category">Gift Sets</span>
+              <h3>Coffee Lover Gift Box</h3>
+              <p>Beans, mug, and brewing accessories</p>
+            </div>
+            <div class="price">75,000 IQD</div>
+          </div>
+        </div>
+      </section>
+      <!--small section before the footer-->
+      <section class="store-info">
+        <h2>Visit Our Store</h2>
+        <p>
+          All items are availabe for purchase at our cafe location.<br />
+          Our staff will be happy to help you choose the perfect products.
+        </p>
+      </section>
+    </main>
+    <!--Footer area-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left column with logo + small text-->
+        <div class="footer-column footer-left">
+          <div class="logo">
+            <img
+              src="images/central-logo.png"
+              alt="Central Cafe Logo"
+              class="footer-logo"
+            />
+            <span>Central Cafe</span>
+          </div>
+          <p>Where flavor meets friends!</p>
+        </div>
+        <!--Middle column: quick links-->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Working hours section-->
+        <div class="footer-column">
+          <h4>Hours</h4>
+          <p>All week:<br />7:45 AM - 12:00 PM</p>
+        </div>
+        <!--Social media section-->
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/central.cafe.duhok"
+              target="_blank"
+            >
+              <img
+                src="images/Instagram-logo.png"
+                alt="Instagram-logo"
+                class="instagram-logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--Bottom text-->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025 Central Cafe. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
