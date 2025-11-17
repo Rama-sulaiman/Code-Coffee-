@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;/* to remove the default spacing from everything */
 }
@@ -50,25 +50,31 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 600;
+  cursor: pointer;
 }
 /* mobile navigation icon(will be hidden on desktop)*/
 .mobile-nav {
   display: none;
+  cursor:pointer;
 }
 
 .mobile-nav img {
   width: 40px;
   height: 50px;
 }
+
 /* the dropdown menu on mobile */
 .mobile-menu {
   display: none;/* it will only show when the user clicks */
+  position: fixed;
+  top:120px; /*header height */
+  bottom:0;/* stretches to bottom */
+  left:0;
+  width:100%;
+  z-index:900;
   background-color: black;
-  position: absolute;
-  top: 100%;/* so it appears right under the header */
-  right: 0;
-  width: 100%;
   text-align: center;
+  padding-top: 40px;
 }
 
 .mobile-menu ul li {
@@ -80,16 +86,26 @@ body {
 .mobile-menu ul li a {
   color: white;
   text-decoration: none;
+  font-size:24px;
   font-weight: 600;
+  cursor:pointer;
 }
+
 /* header on small screens */
 @media screen and (max-width: 768px) {
   .desktop-nav {
-    display: none; /*hide the desktop menu */
+    display: none ; /*hide the desktop menu */
   }
   .mobile-nav {
     display: block;/*show the mobile menu */
   }
+  .mobile-menu{
+    display:none;
+  }
+  .mobile-menu.active{
+display:block;
+}
+
 }
 
 /*footer*/
@@ -159,6 +175,7 @@ body {
 .footer-column ul li a {
   color: #ccc;
   text-decoration: none;
+  cursor:pointer;
 } 
 
 /*social media icon in the footer */
@@ -167,7 +184,9 @@ body {
   gap: 10px;
   margin-top: 10px;
 }
-
+.social-icons a{
+  cursor:pointer;
+}
 .instagram-logo {
   width: 35px;
   height: 35px;
@@ -187,7 +206,6 @@ body {
 /* footer on small screens */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /*stack columns vertically */
     align-items: center;
     text-align: center;
     gap: 25px;
