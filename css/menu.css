@@ -116,14 +116,15 @@ display:block;
 .tab {
     padding: 10px 30px;
     border: 1px solid #ccc;
-    background: white;
+    background: black;
+    color: white;
     cursor: pointer;
     margin: 0 5px;
     border-radius: 20px;
 }
 
 .tab.active {
-    background: #eee;
+    background:burlywood;
 }
 
 .menu-section {
@@ -150,7 +151,8 @@ display:block;
     }
 }
 .item {
-    background: white;
+    background: black;
+    color: white;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -159,12 +161,12 @@ display:block;
 .item img {
     width: 100%;
     border-radius: 10px;
-    height: 400px;
+    height: 325px;
 }
 
 .price {
     font-weight: bold;
-    color: #444;
+    color: white;
 }
 .footer {
   margin-top:0;
