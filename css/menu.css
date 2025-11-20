@@ -116,15 +116,14 @@ display:block;
 .tab {
     padding: 10px 30px;
     border: 1px solid #ccc;
-    background: black;
-    color: white;
     cursor: pointer;
     margin: 0 5px;
     border-radius: 20px;
 }
 
 .tab.active {
-    background:burlywood;
+    background: black;
+    color: white;
 }
 
 .menu-section {
@@ -151,8 +150,7 @@ display:block;
     }
 }
 .item {
-    background: black;
-    color: white;
+  
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -163,10 +161,17 @@ display:block;
     border-radius: 10px;
     height: 325px;
 }
+.item .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
 .price {
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .footer {
   margin-top:0;
