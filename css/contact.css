@@ -227,3 +227,179 @@ display:block;
     margin-bottom: 5px;
   }
 }
+/* the main area */
+/* the first part of the page */
+.contact-hero{
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-hero h1{
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom:20px;
+  line-height:1.2;
+}
+.contact-hero p{
+  font-size:20px;
+  color: #555;
+}
+
+
+/* contact info */
+.contact-info{
+  padding:60px 20px;
+  border-bottom:1px solid #e2e2e6;
+}
+.info-box{
+  display:flex;
+  max-width:1200px;
+  margin: 0 auto;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+}
+.info-card{
+  display:flex;
+  width:300px;
+  flex-direction: column;
+  text-align:center;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+.icon-circle{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background-color:black;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:12px;
+  font-size: 24px;
+}
+.icon-circle img{
+  width:28px;
+  height:28px;
+  object-fit: contain;
+  
+}
+.info-card h3{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:8px;
+}
+.info-card p{
+  font-size:14px;
+  color:#555;
+  line-height:1.4;
+}
+ /* form + map section */
+ .form-map-section{
+  padding:80px 20px;
+  background-color:white;
+ }
+ .form-map-grid{
+  max-width: 1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.5fr 2.5fr;
+  gap:60px;
+  align-items: start;
+ }
+
+ /*form */
+ .contact-form{
+  background-color:white ;
+  padding:30px 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+ }
+
+ .contact-form h2{
+  font-size:32px;
+  margin-bottom:20px;
+  font-weight:700;
+ }
+ .contact-form label{
+display:block;
+font-size:14px;
+font-weight:600;
+margin-bottom:8px;
+ }
+
+ .contact-form input,.contact-form textarea{
+ width:100%;
+ padding:16px;
+ border:1px solid #ddd;
+ border-radius:12px;
+ font-size:15px;
+ background-color: #fafafa;
+ margin-bottom:20px;
+ box-sizing: border-box;
+ }
+ .contact-form button{
+  width:100%;
+  padding:14px;
+  font-size:16px;
+  font-weight:600;
+  color:white;
+  background-color: black;
+  border:none;
+  border-radius: 10px;
+  cursor:pointer;
+ }
+ .map-box{
+  width:100%;
+  height:500px;
+  border-radius: 10px;
+  border:1px solid #fff;
+  
+
+ }
+
+ /* responsive contact us page */
+ @media screen and (max-width:768px){
+  
+ 
+  .info-box {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+
+  .form-map-grid {
+    grid-template-columns: 1fr; /* stack form and map */
+    gap: 30px;
+  }
+
+  /* reduce paddings */
+  .contact-form {
+    padding:20px;
+  }
+
+  
+  .contact-hero {
+    padding: 50px 15px;
+  }
+
+  .contact-hero h1 {
+    font-size: 32px;
+  }
+
+  .contact-hero p {
+    font-size: 16px;
+  }
+
+
+  .map-box {
+    height: 300px;
+  }
+  
+ }
+
+ /*do documentation properly */

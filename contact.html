@@ -45,8 +45,95 @@
         </div>
       </div>
     </header>
+    <!--main area-->
+    <main class="contact-page">
+      <!--first section of contact page-->
+      <section class="contact-hero">
+        <div class="hero-content">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you</p>
+        </div>
+      </section>
+
+      <!--contact information(location,phone,)-->
+      <section class="contact-info">
+        <div class="info-box">
+          <!--location-->
+          <div class="info-card">
+            <div class="icon-circle">
+              <img src="images/location.png" alt="location icon" />
+            </div>
+            <h3>Location</h3>
+            <p>Muhabad Street<br />KRO,<br />Duhok, Kurdistan</p>
+          </div>
+          <!--phone-->
+          <div class="info-card">
+            <div class="icon-circle">
+              <img src="images/phone.png" alt="phone icon" />
+            </div>
+            <h3>Phone</h3>
+            <p>+964 751 505 1577</p>
+          </div>
+          <!--Hours-->
+          <div class="info-card">
+            <div class="icon-circle">
+              <img src="images/clock.png" alt="hour icon" />
+            </div>
+            <h3>Hours</h3>
+            <p>All week:<br />7:45 AM - 12:00 PM</p>
+          </div>
+        </div>
+      </section>
+      <!--contact form-->
+      <section class="form-map-section">
+        <div class="form-map-grid">
+          <form class="contact-form">
+            <h2>Send us a Message</h2>
+
+            <label for="fullname">Full Name *</label>
+            <input id="fullname" type="text" placeholder="Your name" required />
+
+            <label for="email">Email Address *</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              required
+            />
+            <label for="num">Phone Number</label>
+            <input id="num" type="tel" placeholder="+964 XXX XXX XXXX" />
+
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              rows="6"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <!--map-->
+          <div class="contact-map">
+            <h2>Find Us</h2>
+
+            <div class="map-box">
+              <iframe
+                width="100%"
+                height="100%"
+                style="border: 0"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.1261198852985!2d42.9748856!3d36.8633999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40088d31edacd227%3A0x55a7bdfb185f36c!2sCentral%20cafe%20duhok!5e0!3m2!1sen!2siq!4v1763550017148!5m2!1sen!2siq"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer area-->
     <footer class="footer">
       <div class="footer-container">
+        <!-- Left column with logo + small text-->
         <div class="footer-column footer-left">
           <div class="logo">
             <img
@@ -58,7 +145,7 @@
           </div>
           <p>Where flavor meets friends!</p>
         </div>
-
+        <!--Middle column: quick links-->
         <div class="footer-column">
           <h4>Quick Links</h4>
           <ul>
@@ -69,12 +156,12 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-
+        <!-- Working hours section-->
         <div class="footer-column">
           <h4>Hours</h4>
           <p>All week:<br />7:45 AM - 12:00 PM</p>
         </div>
-
+        <!--Social media section-->
         <div class="footer-column">
           <h4>Follow Us</h4>
           <div class="social-icons">
@@ -91,7 +178,7 @@
           </div>
         </div>
       </div>
-
+      <!--Bottom text-->
       <div class="footer-bottom">
         <p class="footer-copy">
           &copy; 2025 Central Cafe. All rights reserved.
