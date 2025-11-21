@@ -518,14 +518,6 @@ display:block;
 }
 
 
-
-/* About image enhancement */
-.about-image-wrapper {
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-background: linear-gradient(135deg, #ffffff 0%, #e6e6e6 100%);}
-
 /* Highlight text in headings */
 .highlight {
   color: #555;
